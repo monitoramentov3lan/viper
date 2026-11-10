@@ -406,7 +406,7 @@
                 <h1 style="margin:0; font-size: 1.5rem;">📊 VIPER</h1>
                 <span id="realtime-status-pill" class="realtime-badge disconnected">⚪ Realtime Conectando...</span>
             </div>
-            <small style="color: var(--text-light); display: block; margin-top: 5px;">Última atualização: 17:34</small>
+            <small style="color: var(--text-light); display: block; margin-top: 5px;">Última atualização: 17:35</small>
         </div>
         <div style="display: flex; gap: 10px;">
             <button class="btn btn-outline" onclick="toggleTheme()">🌓 Tema</button>
@@ -662,7 +662,7 @@
     const GARAGEM_ID = "f1177ef9-79ba-4c3e-bc6c-5e486e025e35";
 
     // Antenas: Status Atual e Histórico de Alterações
-    let ANTENAS = JSON.parse(atob("W3sibm9tZSI6ICJhbnRlbmExIiwgImlwIjogIjE3Mi41NC4xMi4xMDEiLCAic3RhdHVzIjogIm9ubGluZSIsICJ1bHRpbW9fcGluZyI6ICIxMC8xMS8yMDI2IDE3OjM0OjIxIiwgInVsdGltYV9hbHRlcmFjYW8iOiAiMTAvMTEvMjAyNiAxNDozNToxOSIsICJkZXRhbGhlcyI6ICJIVFRQIDIwMCBPSyJ9LCB7Im5vbWUiOiAiYW50ZW5hMiIsICJpcCI6ICIxNzIuNTQuMTIuMTAyIiwgInN0YXR1cyI6ICJvbmxpbmUiLCAidWx0aW1vX3BpbmciOiAiMTAvMTEvMjAyNiAxNzozNDoyNSIsICJ1bHRpbWFfYWx0ZXJhY2FvIjogIjEwLzExLzIwMjYgMTQ6MzU6MTkiLCAiZGV0YWxoZXMiOiAiSFRUUCAyMDAgT0sifSwgeyJub21lIjogImFudGVuYTMiLCAiaXAiOiAiMTcyLjU0LjEyLjEwMyIsICJzdGF0dXMiOiAib25saW5lIiwgInVsdGltb19waW5nIjogIjEwLzExLzIwMjYgMTc6MzQ6MjQiLCAidWx0aW1hX2FsdGVyYWNhbyI6ICIxMC8xMS8yMDI2IDE0OjM1OjE5IiwgImRldGFsaGVzIjogIkhUVFAgMjAwIE9LIn1d"));
+    let ANTENAS = JSON.parse(atob("W3sibm9tZSI6ICJhbnRlbmExIiwgImlwIjogIjE3Mi41NC4xMi4xMDEiLCAic3RhdHVzIjogIm9ubGluZSIsICJ1bHRpbW9fcGluZyI6ICIxMC8xMS8yMDI2IDE3OjM1OjIyIiwgInVsdGltYV9hbHRlcmFjYW8iOiAiMTAvMTEvMjAyNiAxNDozNToxOSIsICJkZXRhbGhlcyI6ICJIVFRQIDIwMCBPSyJ9LCB7Im5vbWUiOiAiYW50ZW5hMiIsICJpcCI6ICIxNzIuNTQuMTIuMTAyIiwgInN0YXR1cyI6ICJvbmxpbmUiLCAidWx0aW1vX3BpbmciOiAiMTAvMTEvMjAyNiAxNzozNToyMCIsICJ1bHRpbWFfYWx0ZXJhY2FvIjogIjEwLzExLzIwMjYgMTQ6MzU6MTkiLCAiZGV0YWxoZXMiOiAiSFRUUCAyMDAgT0sifSwgeyJub21lIjogImFudGVuYTMiLCAiaXAiOiAiMTcyLjU0LjEyLjEwMyIsICJzdGF0dXMiOiAib25saW5lIiwgInVsdGltb19waW5nIjogIjEwLzExLzIwMjYgMTc6MzU6MjAiLCAidWx0aW1hX2FsdGVyYWNhbyI6ICIxMC8xMS8yMDI2IDE0OjM1OjE5IiwgImRldGFsaGVzIjogIkhUVFAgMjAwIE9LIn1d"));
     let ANTENAS_HISTORICO = JSON.parse(atob("W3siZGF0YV9ob3JhIjogIjEwLzExLzIwMjYgMTQ6MzU6MTkiLCAibm9tZSI6ICJhbnRlbmEyIiwgImlwIjogIjE3Mi41NC4xMi4xMDIiLCAic3RhdHVzX2FudGVyaW9yIjogInZlcmlmaWNhbmRvIiwgIm5vdm9fc3RhdHVzIjogIm9ubGluZSIsICJkZXRhbGhlcyI6ICJIVFRQIDIwMCBPSyJ9LCB7ImRhdGFfaG9yYSI6ICIxMC8xMS8yMDI2IDE0OjM1OjE5IiwgIm5vbWUiOiAiYW50ZW5hMyIsICJpcCI6ICIxNzIuNTQuMTIuMTAzIiwgInN0YXR1c19hbnRlcmlvciI6ICJ2ZXJpZmljYW5kbyIsICJub3ZvX3N0YXR1cyI6ICJvbmxpbmUiLCAiZGV0YWxoZXMiOiAiSFRUUCAyMDAgT0sifSwgeyJkYXRhX2hvcmEiOiAiMTAvMTEvMjAyNiAxNDozNToxOSIsICJub21lIjogImFudGVuYTEiLCAiaXAiOiAiMTcyLjU0LjEyLjEwMSIsICJzdGF0dXNfYW50ZXJpb3IiOiAidmVyaWZpY2FuZG8iLCAibm92b19zdGF0dXMiOiAib25saW5lIiwgImRldGFsaGVzIjogIkhUVFAgMjAwIE9LIn1d"));
     let offlineAlerts = new Set();
     
